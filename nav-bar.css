@@ -1,0 +1,157 @@
+/*******************************/
+/********* about_page CSS *********/
+/*******************************/
+/* Nav_Bar */
+.background_section{
+    background: url('./about_background.png');
+    width: 100%;
+    height: 76px;
+    background-size: cover;
+    background-position: center;
+}
+.Nav_Bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+.logo img{
+    width: 200px;
+}
+.menu ul{
+    display: flex;
+    gap: 60px;
+}
+.menu ul li a{
+    font-size: 22px;
+    color: black;
+    position: relative; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.menu ul li a:hover {
+    color: #BD58AE; 
+    transform: translateY(-5px); 
+}
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #BD58AE; 
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.menu ul li a:hover::before {
+    visibility: visible;
+    width: 100%; 
+}
+.Register ul{
+    display: flex;
+    gap: 15px;
+}
+.Register ul li a{
+    font-size: 20px;
+    color: black;
+    transition: color 0.3s ease;
+}
+.Register ul li a:hover {
+    color: #BD58AE; 
+}
+.menu li i{
+    margin-left: 10px;
+}
+
+
+/* القائمة الرئيسية */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; /* تقليل المسافة بين العناصر */
+}
+
+.menu ul li {
+    position: relative; /* ضروري لعرض القائمة المنسدلة بشكل صحيح */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #333;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #BD58AE; /* تغيير لون النص عند التمرير */
+}
+
+
+
+
+/* dashboard*/
+.menu .dropdown ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    gap: 1px; 
+}
+
+.menu .dropdown ul li {
+    position: relative; 
+}
+
+.menu .dropdown ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #333;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.menu .dropdown ul li a:hover {
+    color: #000000;
+}
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%; /* تظهر أسفل عنصر القائمة */
+    background-color: #eceaea; 
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* لضمان الظهور فوق العناصر الأخرى */
+    width: 160px; 
+    flex-direction: column; /* ترتيب العناصر بشكل عمودي */
+    opacity: 0; /* بدايةً، تكون غير مرئية */
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 1px; /* تقليل المسافة الداخلية */
+    display: block;
+    font-size: 8px; /* تصغير حجم الكتابة */
+    transition: color 0.3s;
+}
+
+/* إظهار القائمة المنسدلة عند التمرير */
+.dropdown:hover .dropdown-menu {
+    display: flex; 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+/* dashboard*/
+
+
+
+
+/* about us */
+.below_header{
+    background-color: #f6f5f5;
+    width: 100%;
+    height: 30px;
+}
